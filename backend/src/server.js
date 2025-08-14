@@ -1,5 +1,8 @@
-const express= require ("express");
-const notesRoutes= require("./routes/notesRoutes.js")
+import express from "express";
+import notesRoutes from "./routes/notesRoutes.js";
+import { connectDB } from "./config/db.js";
+
+connectDB();
 
 const app= express();
 
